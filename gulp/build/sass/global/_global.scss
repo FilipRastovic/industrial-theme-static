@@ -1,0 +1,48 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @include body-font;
+}
+
+hr {
+  border-width: 1px;
+  border-color: fade-out($gray-darker, .9);
+}
+
+hr.light {
+  border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include heading-font;
+}
+
+h4 {
+  @media (min-width: 990px) {
+    font-size: 30px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 300;
+
+  @media (min-width: 992px) {
+    font-size: 22px;
+  }
+}
+
+section {
+  padding: 100px 0;
+}

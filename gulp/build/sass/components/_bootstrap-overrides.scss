@@ -1,0 +1,75 @@
+// Bootstrap overrides for this template
+.bg-primary {
+  background: $theme-primary;
+  background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
+  background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+}
+
+.text-primary {
+  color: $theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-full,
+.btn-primary {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  background: $btn;
+  box-shadow: $material-shadow-1;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+      color: white;
+      border-color: darken($btn, 10%);
+      background-color: darken($btn, 10%);
+      box-shadow: $material-shadow-1-hovered;
+  }
+}
+
+.btn,
+.btn-primary {
+  border-radius: 2px;
+  font-family: 'Lato';
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  box-shadow: $material-shadow-1;
+  border-color: $btn;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
+
+a {
+  color: $theme-primary;
+  text-decoration: underline;
+  $color: $theme-primary;
+  @include transition-all;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+a:not([href]):not([tabindex]) {
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
