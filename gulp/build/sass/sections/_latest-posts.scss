@@ -1,0 +1,15 @@
+.latest-posts {
+  li {
+    margin-bottom: 30px;
+  }
+  
+  hr {
+    width: 70px;
+    height: 4px;
+    background-color: $theme-primary;
+    border-color: $theme-primary;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}

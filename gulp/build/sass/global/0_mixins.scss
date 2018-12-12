@@ -66,9 +66,22 @@
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 23px;
+ 
   
   @media (min-width: 990px) {
     font-size: 50px;
+  
+  }
+}
+
+@mixin subheading-font {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 23px;
+
+  @media (min-width: 990px) {
+    font-size: 40px;
   }
 }
 
@@ -78,7 +91,7 @@
 
 @mixin alt-font {
   font-family: 'Roboto Slab', 'Helvetica', 'Arial', 'sans-serif';
-  letter-spacing: 2px;//test
+  letter-spacing: 2px;
 }
 
 @mixin lato-font {

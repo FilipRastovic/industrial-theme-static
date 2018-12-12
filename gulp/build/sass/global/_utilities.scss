@@ -3,3 +3,15 @@
   border-bottom: 1px solid $subtle-border;
   border-top: 1px solid $subtle-border;
 }
+
+.dark-bg {
+  background: $theme-primary;
+  color: white !important;
+}
+
+.content-wrapper {
+  text-align: center;
+  @media (min-width: 990px) {
+    text-align: left;
+  }
+}

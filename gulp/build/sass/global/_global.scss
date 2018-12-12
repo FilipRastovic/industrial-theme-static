@@ -18,12 +18,12 @@ hr.light {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
     @include heading-font;
+}
+
+h3 {
+    @include subheading-font;
 }
 
 h4 {
@@ -37,9 +37,11 @@ p {
   line-height: 1.7;
   margin-bottom: 20px;
   font-weight: 300;
+  text-align: center;
 
   @media (min-width: 992px) {
     font-size: 22px;
+    text-align: left;
   }
 }
 

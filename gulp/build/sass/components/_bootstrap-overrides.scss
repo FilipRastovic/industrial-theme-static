@@ -19,30 +19,29 @@
   color: white;
   border: 1px solid;
   border-color: white;
-  background: $btn;
+  background: $theme-primary;
   box-shadow: $material-shadow-1;
   &:hover,
   &:focus,
   &:active,
   &.active {
       color: white;
-      border-color: darken($btn, 10%);
-      background-color: darken($btn, 10%);
+      border-color: lighten($theme-primary, 5%);
+      background-color: lighten($theme-primary, 5%);
       box-shadow: $material-shadow-1-hovered;
   }
 }
 
 .btn,
 .btn-primary {
-  border-radius: 2px;
   font-family: 'Lato';
   font-weight: 900;
   text-transform: uppercase;
   font-size: 26px;
   letter-spacing: 1px;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: $material-shadow-1;
-  border-color: $btn;
+  border-color: $theme-primary;
   text-decoration: none;
 
   &:visited {
@@ -62,7 +61,7 @@ a {
   @include transition-all;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: lighten($theme-primary, 5%);
     }
 }
 
@@ -71,5 +70,18 @@ a:not([href]):not([tabindex]) {
 
   &:hover {
     color: white;
+  }
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: $theme-primary;
+  &:hover {
+    background-color: darken(white, 10%);
+    border-color: darken(white, 10%);
+  }
+  &:visited {
+    color: $theme-primary;
   }
 }

@@ -1,0 +1,123 @@
+// Styling for the navbar
+#mainNav {
+    border-color: fade-out($gray-darker, .95);
+    background-color: white;
+    @include transition-all;
+    .navbar-brand {
+        color: $theme-primary;
+        img {
+          width: 70%;
+        }
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .navbar-toggler {
+        font-size: 12px;
+        padding: 12px 14px;
+        color: white;
+        border-color: none;
+        background-color: $theme-primary;
+    }
+    .navbar-nav {
+        > li {
+            > a {
+                font-size: 13px;
+                text-decoration: none;
+                
+                @include alt-font;
+                &.active {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            > a,
+            > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+        #request-consultation {
+          font-weight: 900;
+        }
+        .dropdown-menu {
+          border: none;
+          .dropdown-item {
+            text-decoration: none;
+          }
+        }
+    }
+    @media (min-width: 992px) {
+        border-color: transparent;
+        background-color: transparent;
+        .navbar-brand {
+          color: $theme-primary;
+            &:hover,
+            &:focus {
+              color: fade($theme-primary, 20%);
+            }
+        }
+        .navbar-nav > li > a,
+        .navbar-nav > li > a:focus {
+            color: $theme-primary;
+            font-size: 14px;
+            &:hover {
+                color: fade($theme-primary, 20%);
+            }
+        }
+        &.navbar-shrink {
+            border-color: fade-out($gray-darker, .9);
+            background-color: $bg-light;
+            .navbar-brand {
+              color: $theme-primary;
+                &:hover,
+                &:focus {
+                  color: fade($theme-primary, 20%);
+                }
+            }
+            .navbar-nav > li > a,
+            .navbar-nav > li > a:focus {
+                color: $theme-primary;
+                &:hover {
+                    color: fade($theme-primary, 20%);
+                }
+            }
+        }
+        #request-consultation {
+          background-color: $theme-primary;
+          color: white;
+          box-shadow: $material-shadow-2;
+          &:hover {
+            box-shadow: $material-shadow-3;
+          }
+        }
+        /* Removes the arrow from the dropdown */
+        .dropdown-toggle::after {
+          display:none;
+        }
+        .dropdown {
+          .dropdown-item {
+            padding: 0.75rem 1.5rem;
+          }
+          .dropdown-menu {
+              border: 1px solid rgba(0, 0, 0, 0.15);
+              transition: all 0.5s;
+              overflow: hidden;
+              transform-origin: top center;
+              transform: scale(1,0);
+              display: block;
+          }
+          &:hover {
+              .dropdown-menu {
+                  transform: scale(1);
+              }
+          }
+        }
+    }
+}
