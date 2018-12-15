@@ -1,0 +1,14 @@
+header.masthead {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background: #fafafa;
+  border-bottom: 1px solid #C8C7C7;
+
+  @media (min-width: 990px) {
+    padding-top: 200px;
+  }
+}
+
+.no-padding-bot {
+  padding-bottom: 0px;
+}

@@ -1,0 +1,26 @@
+.card {
+  background: $theme-primary;
+  border-color: $theme-primary;
+  color: white;
+  text-align: center;
+
+  @media (min-width: 990px) {
+    text-align: left;
+  }
+  hr {
+    border-color: white;
+    background-color: white;
+  }
+}
+
+.no-top-border {
+  border-top-left-radius: calc(9.25rem - 1px);
+  border-top-right-radius: calc(9.25rem - 1px);
+}
+
+.card-img-top {
+  @media (max-width: 990px) {
+    width: 100px;
+    margin: 0 auto;
+  }
+}

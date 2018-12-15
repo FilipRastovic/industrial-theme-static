@@ -8712,6 +8712,19 @@ section {
     .content-wrapper {
       text-align: left; } }
 
+.mb-50 {
+  margin-bottom: 60px; }
+  @media (min-width: 990px) {
+    .mb-50 {
+      margin-bottom: 200px; } }
+
+article {
+  margin-bottom: 60px;
+  text-align: center; }
+  @media (min-width: 990px) {
+    article {
+      text-align: left; } }
+
 .bg-primary {
   background: #041B31;
   background: -webkit-linear-gradient(#041B31, #020e19);
@@ -8783,6 +8796,61 @@ a:not([href]):not([tabindex]) {
     border-color: #e6e6e6; }
   .btn-white:visited {
     color: #041B31; }
+
+.card {
+  background: #041B31;
+  border-color: #041B31;
+  color: white;
+  text-align: center; }
+  @media (min-width: 990px) {
+    .card {
+      text-align: left; } }
+  .card hr {
+    border-color: white;
+    background-color: white; }
+
+.no-top-border {
+  border-top-left-radius: calc(9.25rem - 1px);
+  border-top-right-radius: calc(9.25rem - 1px); }
+
+@media (max-width: 990px) {
+  .card-img-top {
+    width: 100px;
+    margin: 0 auto; } }
+
+.featured-case-study img {
+  border-radius: 200px; }
+
+.form-wrapper {
+  background: #041B31;
+  color: white;
+  padding: 20px 13px; }
+  .form-wrapper p {
+    font-size: 13px; }
+    @media (min-width: 990px) {
+      .form-wrapper p {
+        font-size: 18px; } }
+
+form.dark {
+  background: #041B31;
+  color: white; }
+  form.dark input {
+    background: #041B31;
+    background-color: #041B31;
+    border: 1px solid white;
+    border-radius: 0px; }
+    form.dark input::placeholder {
+      color: white; }
+
+.list-group {
+  margin-bottom: 60px; }
+
+.list-group-item {
+  border: none; }
+
+.list-group-item.active {
+  background-color: #041B31;
+  border-color: #041B31; }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -8873,6 +8941,183 @@ a:not([href]):not([tabindex]) {
       #mainNav .dropdown:hover .dropdown-menu {
         transform: scale(1); } }
 
+#industrialGrowth {
+  background-color: white;
+  padding: 80px 0 950px; }
+  @media (min-width: 480px) {
+    #industrialGrowth {
+      padding: 80px 0 850px; } }
+
+#industrialGrowth h2 {
+  font-weight: bold;
+  text-align: center;
+  margin: 0; }
+
+#industrialGrowth p {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto; }
+
+#phases {
+  margin: 80px 0 30px; }
+
+#phases .phaseLeft {
+  float: left;
+  width: 22%;
+  margin-left: 4%;
+  position: relative; }
+
+#phases .phaseRight h2,
+#phases .phaseRight p {
+  color: white; }
+
+#phases .phaseLeft p {
+  color: white; }
+
+#phases .phaseRight {
+  float: right;
+  width: 72%;
+  background-color: #041B31;
+  border-radius: 6px;
+  min-height: 527px; }
+
+#phases .phaseRight .phaseContent {
+  padding: 38px;
+  display: none; }
+
+#phases .phaseRight .phaseContent.activeTab {
+  display: block; }
+
+#phases .phaseLeft .firstTwo {
+  position: absolute;
+  left: -208px;
+  top: 154px;
+  background-color: #f58233;
+  color: #fff;
+  font-weight: 200;
+  padding: 2px 0;
+  transform: rotate(-90deg);
+  border-radius: 6px;
+  width: 345px;
+  text-align: center; }
+
+#phases .phaseLeft .ongoing {
+  position: absolute;
+  left: -113px;
+  top: 433px;
+  background-color: #f58233;
+  color: #fff;
+  font-weight: 200;
+  padding: 2px 0px;
+  transform: rotate(-90deg);
+  border-radius: 6px;
+  width: 156px;
+  text-align: center; }
+
+#phases .phaseLeft .phaseNav {
+  margin: 0 0 30px 0;
+  border: 1px solid #041B31;
+  border-radius: 6px;
+  padding: 20px;
+  position: relative;
+  height: 156px;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s; }
+  #phases .phaseLeft .phaseNav:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+#phases .phaseLeft .phaseNav.activeTab {
+  background-color: #041B31;
+  border: 1px solid #041B31;
+  color: white; }
+
+#phases .phaseLeft .phaseNav.activeTab:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(65, 65, 65, 0);
+  border-left-color: #041B31;
+  border-width: 20px;
+  margin-top: -20px; }
+
+#phases .phaseLeft h4 {
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  color: #041B31;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  transform: rotate(-90deg); }
+  @media (min-width: 480px) {
+    #phases .phaseLeft h4 {
+      top: 0px;
+      left: 0px;
+      position: relative;
+      transform: rotate(0deg); } }
+
+#phases .phaseLeft p {
+  text-align: left;
+  max-width: 100%;
+  color: #041B31;
+  font-size: 18px; }
+
+#phases .phaseLeft .details {
+  display: block;
+  text-align: right;
+  color: #f58233;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  text-decoration: underline;
+  cursor: pointer; }
+
+#phases .phaseLeft .phaseNav.activeTab .details {
+  display: none; }
+
+#phases .phaseRight h3 {
+  color: #fff;
+  font-weight: 200;
+  margin: 0 0 20px 0; }
+
+#phases .phaseRight h3 strong {
+  font-weight: bold; }
+
+#phases .phaseRight p {
+  max-width: 100%;
+  text-align: left;
+  margin: 0 0 20px 0; }
+
+#phases .phaseRight h6 {
+  margin: 0; }
+
+#phases .phaseRight h6 a {
+  background-color: #ffffff;
+  color: #041B31;
+  padding: 12px 40px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: 200;
+  display: inline-block; }
+
+#phases .phaseRight h6 a:hover {
+  background-color: #000102; }
+
+.page-template-services-overview #homeSlider {
+  background: #fff;
+  margin: 200px 0 200px 0; }
+
+.phaseNav.activeTab h4,
+.phaseNav.activeTab p {
+  color: white !important; }
+
 #scroll-top {
   display: none;
   /* Hidden by default */
@@ -8905,6 +9150,29 @@ a:not([href]):not([tabindex]) {
   background-color: #555;
   /* Add a dark-grey background on hover */ }
 
+@media (max-width: 990px) {
+  .service-copy h1 {
+    text-align: center;
+    margin-bottom: 30px; } }
+
+.service-copy p {
+  margin-bottom: 50px; }
+
+@media (max-width: 990px) {
+  .cta {
+    padding-top: 60px;
+    padding-bottom: 30px; } }
+
+.whitepaper {
+  text-align: center; }
+  .whitepaper h2 {
+    margin-bottom: 30px; }
+  .whitepaper p {
+    margin-bottom: 30px; }
+  @media (min-width: 990px) {
+    .whitepaper {
+      text-align: left; } }
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -8935,3 +9203,15 @@ footer {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 30px; }
+
+header.masthead {
+  padding-top: 120px;
+  padding-bottom: 70px;
+  background: #fafafa;
+  border-bottom: 1px solid #C8C7C7; }
+  @media (min-width: 990px) {
+    header.masthead {
+      padding-top: 200px; } }
+
+.no-padding-bot {
+  padding-bottom: 0px; }

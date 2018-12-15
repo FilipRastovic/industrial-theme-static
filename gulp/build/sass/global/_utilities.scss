@@ -15,3 +15,14 @@
     text-align: left;
   }
 }
+
+.mb-50 {
+  margin-bottom: 60px;
+  @media (min-width: 990px) {
+    margin-bottom: 200px;
+  }
+}
+
+
+
+

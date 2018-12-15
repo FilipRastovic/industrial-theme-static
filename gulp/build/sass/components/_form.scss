@@ -1,0 +1,28 @@
+.form-wrapper {
+  background: $theme-primary;
+  color: white;
+  padding: 20px 13px;
+
+  p {
+    font-size: 13px;
+
+    @media (min-width: 990px) {
+      font-size: 18px;
+    }
+  }
+}
+
+form.dark {
+  background: $theme-primary;
+  color: white;
+
+  input {
+    background: $theme-primary;
+    background-color: $theme-primary;
+    border: 1px solid white;
+    border-radius: 0px;
+    &::placeholder {
+      color: white;
+    }
+  }
+}

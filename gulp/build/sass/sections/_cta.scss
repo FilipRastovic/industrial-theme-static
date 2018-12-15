@@ -1,0 +1,20 @@
+.cta {
+  @media (max-width: 990px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+.whitepaper {
+  text-align: center;
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 990px) {
+    text-align: left;
+  }
+}

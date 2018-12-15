@@ -1,0 +1,12 @@
+.list-group {
+  margin-bottom: 60px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item.active {
+  background-color: $theme-primary;
+  border-color: $theme-primary;
+}
