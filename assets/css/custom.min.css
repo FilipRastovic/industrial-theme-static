@@ -8834,12 +8834,14 @@ a:not([href]):not([tabindex]) {
 form.dark {
   background: #041B31;
   color: white; }
-  form.dark input {
+  form.dark input,
+  form.dark select {
     background: #041B31;
     background-color: #041B31;
     border: 1px solid white;
     border-radius: 0px; }
-    form.dark input::placeholder {
+    form.dark input::placeholder,
+    form.dark select::placeholder {
       color: white; }
 
 .list-group {

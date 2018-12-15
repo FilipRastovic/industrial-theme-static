@@ -16,7 +16,8 @@ form.dark {
   background: $theme-primary;
   color: white;
 
-  input {
+  input,
+  select {
     background: $theme-primary;
     background-color: $theme-primary;
     border: 1px solid white;
