@@ -67,7 +67,9 @@ $(document).ready(function(){(function($) {
 		$('.phaseLeft .phaseNav').click(function(){
 			$('#phases .phaseRight').insertAfter('.phaseNav.activeTab');
 		});
-	}
+  }
+  
+  AOS.init();
 $("#cta-portfolio").click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $("#portfolio").offset().top

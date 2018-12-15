@@ -24,4 +24,6 @@
 		$('.phaseLeft .phaseNav').click(function(){
 			$('#phases .phaseRight').insertAfter('.phaseNav.activeTab');
 		});
-	}
+  }
+  
+  AOS.init();
