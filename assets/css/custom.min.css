@@ -9529,11 +9529,20 @@ a:not([href]):not([tabindex]) {
     color: #041B31; }
 
 .card {
-  background: #041B31;
-  border-color: #041B31;
-  color: white;
+  background: #FAFAFA;
+  color: #041B31;
+  border: none;
   text-align: center;
   margin-bottom: 50px; }
+  .card-header {
+    background: #FAFAFA;
+    color: #041B31;
+    border: none; }
+  .card--case-study {
+    background: #FAFAFA;
+    color: #041B31;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   @media (min-width: 990px) {
     .card {
       text-align: left; } }
@@ -9706,10 +9715,10 @@ form.dark {
 
 #industrialGrowth {
   background-color: white;
-  padding: 80px 0 950px; }
+  padding: 80px 0 750px; }
   @media (min-width: 480px) {
     #industrialGrowth {
-      padding: 80px 0 850px; } }
+      padding: 80px 0 650px; } }
 
 #industrialGrowth h2 {
   font-weight: bold;
@@ -9819,7 +9828,7 @@ form.dark {
   margin: 0;
   text-transform: uppercase;
   transform: rotate(-90deg);
-  font-size: 1.3rem; }
+  font-size: 1.1rem; }
   @media (min-width: 480px) {
     #phases .phaseLeft h4 {
       top: 0px;
@@ -9979,6 +9988,17 @@ footer {
       footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
         text-decoration: none; }
 
+.landing-page-content h2 {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.landing-page-content--left {
+  margin-bottom: 50px; }
+
+@media (min-width: 990px) {
+  .landing-page-content h2 {
+    text-align: left; } }
+
 .latest-posts li {
   margin-bottom: 30px; }
 
@@ -9996,6 +10016,8 @@ header.masthead {
   padding-bottom: 70px;
   background: #fafafa;
   border-bottom: 1px solid #C8C7C7; }
+  header.masthead--noborder {
+    border-bottom: none; }
   @media (min-width: 990px) {
     header.masthead {
       padding-top: 200px; } }
