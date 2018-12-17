@@ -126,18 +126,20 @@
 #phases .phaseLeft h4 {
   //color: #fff;
   position: absolute;
-  top: 40px;
+  top: 65px;
   left: -10px;
   color: $theme-primary;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
   transform: rotate(-90deg);
+  font-size: 1.3rem;
   @media (min-width: 480px) {
     top: 0px;
     left: 0px;
     position: relative;
     transform: rotate(0deg);
+    font-size: 1.5rem;
   }
 }
 
