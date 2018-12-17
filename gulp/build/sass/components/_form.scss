@@ -1,7 +1,7 @@
 .form-wrapper {
-  background: $theme-primary;
-  color: white;
   padding: 20px 13px;
+  background: #fafafa;
+  box-shadow: $material-shadow-1;
 
   p {
     font-size: 13px;
@@ -12,10 +12,7 @@
   }
 }
 
-form.dark {
-  background: $theme-primary;
-  color: white;
-
+form {
   input,
   select {
     background: $theme-primary;
