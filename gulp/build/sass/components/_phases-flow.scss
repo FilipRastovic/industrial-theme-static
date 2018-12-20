@@ -44,7 +44,7 @@
   float: right;
   width: 72%;
   background-color: $theme-primary;
-  border-radius: 6px;
+  border-radius: 0px;
   min-height: 527px;
 }
 
@@ -67,7 +67,7 @@
   font-weight: 200;
   padding: 2px 0;
   transform: rotate(-90deg);
-  border-radius: 6px;
+  border-radius: 0px;
   width: 345px;
   text-align: center;
 }
@@ -82,7 +82,7 @@
   font-weight: 200;
   padding: 2px 0px;
   transform: rotate(-90deg);
-  border-radius: 6px;
+  border-radius: 0px;
   width: 156px;
   text-align: center;
 }
@@ -90,7 +90,7 @@
 #phases .phaseLeft .phaseNav {
   margin: 0 0 30px 0;
   border: 1px solid $theme-primary;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 20px;
   position: relative;
   height: 156px;
@@ -195,7 +195,7 @@
   color: $theme-primary;
   padding: 12px 40px;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 0px;
   font-weight: 200;
   display: inline-block;
 }

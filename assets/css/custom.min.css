@@ -9454,6 +9454,9 @@ section {
 .fa-bars:before {
   font-size: 26px; }
 
+.bg-grey {
+  background: #fafafa; }
+
 article {
   margin-bottom: 60px;
   text-align: center; }
@@ -9567,32 +9570,40 @@ a:not([href]):not([tabindex]) {
 .featured-case-study img {
   border-radius: 200px; }
 
-.form-wrapper {
-  padding: 20px 13px;
-  background: #fafafa;
+.form-wrapper,
+.new-form-wrapper {
+  padding: 30px 25px 30px;
+  background: #EBEBEB;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  .form-wrapper p {
+  .form-wrapper p,
+  .new-form-wrapper p {
     font-size: 13px; }
     @media (min-width: 990px) {
-      .form-wrapper p {
+      .form-wrapper p,
+      .new-form-wrapper p {
         font-size: 18px; } }
 
-form input,
-form select {
-  background: #041B31;
-  background-color: #041B31;
-  border: 1px solid white;
+form {
   border-radius: 0px; }
-  form input::placeholder,
-  form select::placeholder {
-    color: white; }
+  form input,
+  form select {
+    border-radius: 0px;
+    background: #041B31;
+    background-color: #041B31;
+    border: 1px solid white;
+    border-radius: 0px; }
+    form input::placeholder,
+    form select::placeholder {
+      color: white; }
+  form .form-control {
+    border-radius: 0px; }
 
 .landing-page-content .form-group {
   margin-bottom: 25px; }
   .landing-page-content .form-group input,
   .landing-page-content .form-group textarea {
-    padding: 20px;
-    border-color: #858585; }
+    padding: 10px;
+    border-color: #d8d8d8; }
   .landing-page-content .form-group input.form-control {
     height: auto; }
   .landing-page-content .form-group textarea.form-control {
@@ -9678,7 +9689,7 @@ form select {
       #mainNav .navbar-nav > li > a,
       #mainNav .navbar-nav > li > a:focus {
         color: #041B31;
-        font-size: 14px; }
+        font-size: 13px; }
         #mainNav .navbar-nav > li > a:hover,
         #mainNav .navbar-nav > li > a:focus:hover {
           color: fade(#041B31, 20%); }
@@ -9714,6 +9725,11 @@ form select {
         display: block; }
       #mainNav .dropdown:hover .dropdown-menu {
         transform: scale(1); } }
+  @media (min-width: 1200px) {
+    #mainNav .navbar-nav > li > a,
+    #mainNav .navbar-nav > li > a:focus {
+      color: #041B31;
+      font-size: 14px; } }
 
 #industrialGrowth {
   background-color: white;
@@ -9752,7 +9768,7 @@ form select {
   float: right;
   width: 72%;
   background-color: #041B31;
-  border-radius: 6px;
+  border-radius: 0px;
   min-height: 527px; }
 
 #phases .phaseRight .phaseContent {
@@ -9771,7 +9787,7 @@ form select {
   font-weight: 200;
   padding: 2px 0;
   transform: rotate(-90deg);
-  border-radius: 6px;
+  border-radius: 0px;
   width: 345px;
   text-align: center; }
 
@@ -9784,14 +9800,14 @@ form select {
   font-weight: 200;
   padding: 2px 0px;
   transform: rotate(-90deg);
-  border-radius: 6px;
+  border-radius: 0px;
   width: 156px;
   text-align: center; }
 
 #phases .phaseLeft .phaseNav {
   margin: 0 0 30px 0;
   border: 1px solid #041B31;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 20px;
   position: relative;
   height: 156px;
@@ -9879,7 +9895,7 @@ form select {
   color: #041B31;
   padding: 12px 40px;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 0px;
   font-weight: 200;
   display: inline-block; }
 
@@ -9925,6 +9941,13 @@ form select {
 #scroll-top:hover {
   background-color: #555;
   /* Add a dark-grey background on hover */ }
+
+.service-copy img {
+  width: 300px;
+  height: auto; }
+  @media (min-width: 990px) {
+    .service-copy img {
+      width: 400px; } }
 
 @media (max-width: 990px) {
   .service-copy h1 {
@@ -9994,6 +10017,9 @@ footer {
   text-align: center;
   margin-bottom: 30px; }
 
+.landing-page-content article {
+  background: white; }
+
 .landing-page-content--left {
   margin-bottom: 50px; }
 
@@ -10012,6 +10038,19 @@ footer {
   margin-left: 0;
   margin-top: 0;
   margin-bottom: 30px; }
+
+.learning-center-copy article {
+  background: white;
+  margin-bottom: 80px;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px 20px 30px; }
+  .learning-center-copy article:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .learning-center-copy article a:hover {
+    background: #083560 !important; }
 
 header.masthead {
   padding-top: 120px;

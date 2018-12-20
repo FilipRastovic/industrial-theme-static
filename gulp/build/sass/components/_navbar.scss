@@ -64,7 +64,7 @@
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
             color: $theme-primary;
-            font-size: 14px;
+            font-size: 13px;
             &:hover {
                 color: fade($theme-primary, 20%);
             }
@@ -117,5 +117,13 @@
               }
           }
         }
+    }
+
+    @media (min-width: 1200px) {
+      .navbar-nav > li > a,
+      .navbar-nav > li > a:focus {
+          color: $theme-primary;
+          font-size: 14px;
+      }
     }
 }

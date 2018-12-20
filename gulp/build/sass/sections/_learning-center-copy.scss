@@ -1,0 +1,17 @@
+.learning-center-copy {
+ article {
+  background: white;
+  margin-bottom: 80px;
+  @include transition-all;
+  box-shadow: $material-shadow-1;
+  padding: 10px 20px 30px;
+
+  &:hover {
+    box-shadow: $material-shadow-1-hovered;
+  }
+
+  a:hover {
+    background: lighten($theme-primary, 10%) !important;
+  }
+ }
+}

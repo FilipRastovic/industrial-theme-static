@@ -1,6 +1,7 @@
-.form-wrapper {
-  padding: 20px 13px;
-  background: #fafafa;
+.form-wrapper,
+.new-form-wrapper {
+  padding: 30px 25px 30px;
+  background: #EBEBEB;
   box-shadow: $material-shadow-1;
 
   p {
@@ -13,8 +14,10 @@
 }
 
 form {
+  border-radius: 0px;
   input,
   select {
+    border-radius: 0px;
     background: $theme-primary;
     background-color: $theme-primary;
     border: 1px solid white;
@@ -23,6 +26,10 @@ form {
       color: white;
     }
   }
+
+  .form-control {
+    border-radius: 0px;
+  }
 }
 
 .landing-page-content {
@@ -30,8 +37,8 @@ form {
     margin-bottom: 25px;
     input,
     textarea {
-      padding: 20px;
-      border-color: rgb(133, 133, 133);
+      padding: 10px;
+      border-color: rgb(216, 216, 216);
     }
     input.form-control {
       height: auto;
