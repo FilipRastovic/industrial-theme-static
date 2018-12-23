@@ -1,5 +1,6 @@
 header.polygon {
   position: relative;
+
   //height: 300px;
   //overflow: hidden;
   h1,
@@ -8,13 +9,13 @@ header.polygon {
   }
 
   p {
-    @media (min-width: 990px){
+    @media (min-width: 990px) {
       width: 550px;
       max-width: 550px;
     }
   }
 
-  
+
 }
 
 .header__bg {
