@@ -10052,6 +10052,43 @@ footer {
   .learning-center-copy article a:hover {
     background: #083560 !important; }
 
+header.masthead--home {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* optional, center the image */
+  text-align: right; }
+  header.masthead--home hr {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  header.masthead--home h1 {
+    font-size: 2rem;
+    margin-top: 20rem;
+    color: #041B31;
+    display: block;
+    text-align: right; }
+  header.masthead--home p {
+    font-weight: 300; }
+  @media (min-width: 768px) {
+    header.masthead--home p {
+      font-size: 1.15rem; } }
+  @media (min-width: 992px) {
+    header.masthead--home {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead--home h1 {
+        font-size: 3rem; } }
+  @media (min-width: 1200px) {
+    header.masthead--home h1 {
+      font-size: 4rem;
+      margin-top: 23rem; } }
+
 header.masthead {
   padding-top: 120px;
   padding-bottom: 70px;
