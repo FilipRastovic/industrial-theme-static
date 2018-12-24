@@ -10054,25 +10054,27 @@ footer {
 
 header.masthead--home {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
-  /* <------ */
-  background-repeat: no-repeat;
-  background-position: center center;
-  /* optional, center the image */
-  text-align: right; }
+  padding-bottom: calc(10rem - 56px); }
   header.masthead--home hr {
     margin-top: 30px;
     margin-bottom: 30px; }
+  header.masthead--home p {
+    text-align: right; }
   header.masthead--home h1 {
     font-size: 2rem;
-    margin-top: 20rem;
-    color: #041B31;
-    display: block;
-    text-align: right; }
+    color: #041B31; }
   header.masthead--home p {
     font-weight: 300; }
+  @media (min-width: 550px) {
+    header.masthead--home {
+      background-image: url("../img/hero.jpg");
+      background-size: cover;
+      /* <------ */
+      background-repeat: no-repeat;
+      background-position: center center;
+      /* optional, center the image */ }
+      header.masthead--home h1 {
+        margin-top: 20rem; } }
   @media (min-width: 768px) {
     header.masthead--home p {
       font-size: 1.15rem; } }
