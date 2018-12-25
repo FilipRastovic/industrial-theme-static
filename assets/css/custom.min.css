@@ -9570,6 +9570,9 @@ a:not([href]):not([tabindex]) {
 .featured-case-study img {
   border-radius: 200px; }
 
+.featured-case-study.bg-grey .card-body {
+  background: #ebebeb; }
+
 .form-wrapper,
 .new-form-wrapper {
   padding: 30px 25px 30px;
