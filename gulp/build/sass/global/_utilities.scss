@@ -29,4 +29,14 @@
 
 .bg-grey {
   background: #fafafa;
+  border-top: 1px solid darken(#fafafa, 10%);
+  border-bottom: 1px solid darken(#fafafa, 10%);
+
+  &--noborder-top {
+    border-top: none;
+  }
+
+  &--noborder-bot {
+    border-bottom: none;
+  }
 }

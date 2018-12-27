@@ -14,4 +14,11 @@
     background: lighten($theme-primary, 10%) !important;
   }
  }
+
+ .noshadow {
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+    }
+  }
 }
